@@ -39,22 +39,6 @@ class Auth(object):
         return session
 
 
-DEFAULT_USERNAME = 'admin'
-DEFAULT_PASSWORD = 'S3cur!ty'
-CONSOLE_URL_FORMAT = 'https://172.16.106.24'
 
-auth = Auth(CONSOLE_URL_FORMAT, DEFAULT_USERNAME, DEFAULT_PASSWORD)
-session = auth.login()
-# files = {
-#     "tempFile": open("E:\Downloads\intellgence (13).xlsx", "rb")
-# }
-#response = session.post("https://172.16.100.252/security/intelligence/import/excel/check", files=files)
-#response = session.post("http://172.16.100.252:8080/enterprise/security/intelligence/import/excel/check", files=files)
-response = session.get("http://172.16.106.24:8080/enterprise/security/intelligence/export/excel?ids=08RK6FCD53ea")
-response_content = response.content
-
-filename = 'E:\\a2.xlsb'
-with open(filename, 'w') as f: # 如果filename不存在会自动创建， 'w'表示写数据，写之前会清空文件中的原有数据！
-    f.write(response_content)
-    f.close()
-print(response_content)
+aa = {"pull_time": 1534933568703, "Category": "\t\xe5\xae\x89\xe5\x85\xa8 ID:\t\tS-1-5-21-1688866898-141319640-2308027785-1371"}
+print aa
