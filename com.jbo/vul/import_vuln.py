@@ -4,10 +4,10 @@
 import json
 import requests
 
-ip = "172.16.106.99"
+ip = "172.16.106.171"
 vuln_type = 1
 
-url = "http://172.16.106.99:8080/enterprise/security/vulnerability/import"
+url = "http://172.16.106.171:8080/enterprise/security/vulnerability/import"
 token = dict(TOKEN='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHQiOjE1MDY1MjIzMDc0ODIsInVpZCI6IkZJS1ZJWlMzMDAwNyIsImN0IjoxNTA2NDkzNTA3NDgyLCJsbiI6ImFkbWluIiwic2FkbSI6dHJ1ZSwiY2lwIjoiMTcyLjE2LjEwMi43MyIsInJuIjoi6LaF57qn566h55CG5ZGYIiwiaWF0IjoxNTA2NDkzNTA3NDgyfQ.uyBK2BENufulF6rnh2J0WqhTwPbd5T9jGgvPIPUcj5s')
 
 def main():
